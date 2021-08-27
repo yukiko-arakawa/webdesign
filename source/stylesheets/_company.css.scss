@@ -1,0 +1,85 @@
+.company-container{
+  display: flex;
+  margin: -20px 5% 140px;
+  img{
+    width: 40%;
+    margin-right: 50px;
+  }
+  p{
+    font-family: ヒラギノ角ゴシック;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.8;
+  }
+}.company-detail{
+  margin: 0 10% 110px;
+  h2{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 60px;
+  }
+  table{
+    margin-bottom: 60px;
+    width: 100%;
+    tr{
+      border-bottom: 1px solid #dddddd;
+      text-align: left;
+      table-layout: fixed;
+      th{
+        width: 20%;
+      }
+      td{
+        padding: 30px 0;
+      }
+    }
+  }
+}
+
+@media(max-width:768px){
+  .company-wrapper{
+    .message{
+      font-size: 24px;
+      margin-top: -100px;
+    }
+  }
+  .company-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 5% 100px;
+    img{
+      width: 100%;
+      margin-top: -200px;
+      margin-bottom: 30px;
+    }
+  }
+  .company-detail{
+    margin: 0 10% 110px;
+    h2{
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 60px;
+    }
+    table{
+      margin-bottom: 60px;
+      width: 100%;
+      tr{
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid #dddddd;
+        text-align: left;
+        table-layout: fixed;
+        th{
+          width: 100%;
+          margin-top: 30px;
+        }
+        td{
+          padding: 10px 0;
+        }
+      }
+    }
+    iframe{
+      height: 240px;
+      margin-bottom: -20px;
+    }
+  }
+}

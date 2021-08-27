@@ -1,0 +1,47 @@
+
+  .btn{
+    width: 200px;
+    border-radius: 50vh;
+    
+    a{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      text-decoration: none;
+      color: white;
+      font-family: Montserrat;
+      font-size: 14px;
+        padding: 24px 0 24px 20px;
+        font-weight: bold;
+        letter-spacing: 1.2px;
+       
+        &::after {
+          content: '';
+          width: 5px;
+          height: 5px;
+          margin-left: -50px;
+          border-top: 2.5px solid white;
+          border-right: 2.5px solid white;
+          transform: rotate(45deg);
+        }
+        &:hover{
+          opacity: 0.7;
+          transition: 0.5s;
+        }
+        &:hover::after {
+          margin-right: -10px;
+          transition: 0.5s;
+        }
+    }
+  }
+  .btn-contact{
+    border: 1px solid white;
+  }
+  .btn-more{
+    background-image: linear-gradient(to right, #7633a4 0%, #250d65 51%, #7633a4 100%);
+    a{
+      padding: 24px 0 24px 30px;
+    }
+  }
+
+ 
