@@ -44,3 +44,12 @@ page '/*.txt', layout: false
 #   activate :minify_css
 #   activate :minify_javascript
 # end
+class MyFeature < Middleman::Extension
+  def after_build(builder)
+    builder.thor.run './my_build_script.sh'
+  end
+end
+
+::Middleman::Extensions.register(:my_feature, MyFeature)
+
+activate :my_feature
